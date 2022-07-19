@@ -116,3 +116,20 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+
+/*
+* general styling here:
+*/
+body {
+  font-size: var(--fs-body);
+  font-family: var(--ff-body);
+  color: var(--clr-primary-400);
+}
+
+.container {
+  --max-width: 1110px;
+  --padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
